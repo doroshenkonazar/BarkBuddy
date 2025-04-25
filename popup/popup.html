@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BarkBuddy Settings</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>BarkBuddy</h1>
+      <p>Your friendly browser companion</p>
+    </div>
+    
+    <div class="settings">
+      <div class="setting">
+        <label for="dogEnabled">Enable BarkBuddy</label>
+        <label class="switch">
+          <input type="checkbox" id="dogEnabled" checked>
+          <span class="slider round"></span>
+        </label>
+      </div>
+      
+      <div class="setting">
+        <label for="apiKey">OpenAI API Key</label>
+        <input type="password" id="apiKey" placeholder="Pre-configured" disabled>
+        <p class="hint">API key is pre-configured</p>
+      </div>
+      
+      <div class="actions">
+        <button id="resetPosition">Reset Position</button>
+        <button id="summarizePage">Summarize Page</button>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p id="status"></p>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

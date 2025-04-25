@@ -1,0 +1,151 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  background-color: #fefae0;
+  color: #333;
+}
+
+.container {
+  padding: 15px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  color: #774936;
+  font-size: 24px;
+}
+
+.header p {
+  margin: 5px 0 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.settings {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.setting {
+  margin-bottom: 15px;
+}
+
+.setting label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.setting input[type="password"] {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.hint {
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: #888;
+}
+
+/* Toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #d4a373;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #d4a373;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 24px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.actions button {
+  flex: 1;
+  padding: 8px 0;
+  background-color: #e9edc9;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.actions button:hover {
+  background-color: #ccd5ae;
+}
+
+.footer {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#status {
+  font-size: 13px;
+  color: #4caf50;
+  margin: 0;
+  min-height: 20px;
+}

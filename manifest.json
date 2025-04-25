@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "BarkBuddy",
+  "version": "1.0",
+  "description": "A friendly dog companion in your browser",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["dog/dog.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "host_permissions": ["<all_urls>"],
+  "web_accessible_resources": [
+    {
+      "resources": ["dog/*", "assets/*", "config.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
