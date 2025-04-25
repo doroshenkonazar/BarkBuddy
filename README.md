@@ -18,7 +18,7 @@ BarkBuddy is a friendly, AI-powered dog companion for your browser. It sits in t
 
   ![Screenshot 2025-04-25 183715](https://github.com/user-attachments/assets/49283254-f880-4406-98ac-b4d412e319cc)
 
-  ![Screenshot 2025-04-25 183906](https://github.com/user-attachments/assets/da816961-01db-4387-8e41-a3906e7f601d)
+  ![Screenshot 2025-04-25 184436](https://github.com/user-attachments/assets/90760ea0-ec8c-4311-900b-d8ccac06e9c4)
 
 
 ## Installation
