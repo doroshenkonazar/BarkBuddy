@@ -36,8 +36,8 @@ BarkBuddy is a friendly, AI-powered dog companion for your browser. It sits in t
 
 BarkBuddy comes pre-configured with an API key, but you can use your own:
 
-1. Open `config.js` in the extension directory
-2. Replace the `OPENAI_API_KEY` value with your own OpenAI API key
+1. Create an `env` file in the extension directory
+2. Insert your own `OPENAI_API_KEY`from OpenAI API key
 3. Reload the extension from the Chrome extensions page
 
 
