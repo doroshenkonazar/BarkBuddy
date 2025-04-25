@@ -36,7 +36,7 @@ BarkBuddy is a friendly, AI-powered dog companion for your browser. It sits in t
 
 BarkBuddy comes pre-configured with an API key, but you can use your own:
 
-1. Create an `env` file in the extension directory
+1. Create an `.env` file in the extension directory
 2. Insert your own `OPENAI_API_KEY`from OpenAI API key
 3. Reload the extension from the Chrome extensions page
 
@@ -112,7 +112,7 @@ If the dog doesn't appear on a page:
 If the AI chat isn't responding:
 
 1. Check your internet connection
-2. Verify the API key in `config.js` is valid
+2. Verify the API key in `.env` is valid
 3. Check the browser console for any error messages
 4. Try reloading the extension
 
@@ -122,7 +122,7 @@ If the AI chat isn't responding:
 BarkBuddy only sends the following data to OpenAI:
 
 - Page content when you explicitly request a summary
-- Your chat messages and limited page context when you ask questions
+- Your chat messages and the limited page context when you ask questions
 - No browsing data is collected or stored
 
 
